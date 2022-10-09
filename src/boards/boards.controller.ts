@@ -1,6 +1,4 @@
 import { Body, Controller, Delete, Get, Param, ParseIntPipe, Patch, Post, UsePipes, ValidationPipe } from '@nestjs/common';
-import { get } from 'http';
-import { title } from 'process';
 import { BoardStatus } from './board-status.enum';
 import { BoardsService } from './boards.service';
 import { Board } from './board.entity';
