@@ -1,12 +1,10 @@
 
-// import { CustomRepository } from 'src/boards/db/typeorm-ex.decorator';
 import { Repository,EntityRepository } from 'typeorm';
 import { User } from './user.entitiy';
 import { AuthCredentialsDto } from './dto/auth-credential.dto';
 import { ConflictException, InternalServerErrorException } from '@nestjs/common';
 import * as bcrypt from 'bcryptjs';
 
-// @CustomRepository(User)
 @EntityRepository(User)
 export class UserRepository extends Repository<User> {
 
